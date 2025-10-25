@@ -6,6 +6,7 @@ import DashboardCards from "../components/Dashboard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useNavigate } from 'react-router-dom'
+import useGetAllJobs from "../hooks/useGetAllJobs"
 
 function Home() {
   useGetAllJobs();
