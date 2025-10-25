@@ -6,7 +6,7 @@ import getDataUri from "../config/datauri.js";
 import cloudinary from "../config/cloudinary.js";
 
 
-export const signUp=async (req,res) => {
+export const signUp = async (req,res) => {
     try {
         console.log("signup body:",req.body);
         let {name,email,password,role} = req.body;
