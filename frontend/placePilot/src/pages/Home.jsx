@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import FeaturesSection from "../components/FeaturesSection";
 import PlacementStats from "../components/PlacementStats";
@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useNavigate } from 'react-router-dom'
 import useGetAllJobs from "../hooks/useGetAllJobs"
+import { useSelector } from 'react-redux'
 
 function Home() {
   useGetAllJobs();
@@ -24,7 +25,7 @@ function Home() {
       <HeroSection />
       <DashboardCards/>
       <PlacementStats />
-      <FeaturesSection />
+      <FeaturesSection/>
        <Footer/>
     </div>
   );
