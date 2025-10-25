@@ -1,0 +1,35 @@
+/* job-cards.css */
+.job-grid {
+  max-width: 1200px; /* prevents cards from getting too narrow on very wide screens */
+  margin: 0 auto;
+}
+
+.job-card {
+  min-height: 260px;   /* sensible minimum */
+  max-height: 320px;   /* prevents extremely tall cards */
+  overflow: hidden;
+}
+
+/* Ensure card-body fills the card so mt-auto works reliably */
+.job-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+/* clamp description to 3 lines so long descriptions don't blow up height */
+.job-card .job-desc {
+  flex: 1 0 auto;
+  margin-bottom: .5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+/* small spacing for the tag group on small screens */
+.job-card .tag-group {
+  gap: .5rem;
+}
