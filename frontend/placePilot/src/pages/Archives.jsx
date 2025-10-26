@@ -11,7 +11,7 @@ const Archives = () => {
 
   const fetchArchives = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/archives/get", { withCredentials: true });
+      const res = await axios.get("https://react-node-placepilot-fullstack.onrender.com/api/archives/get", { withCredentials: true });
       setArchives(res.data.archives || []);
     } catch (error) {
       console.error("Error fetching archives:", error);
@@ -66,7 +66,7 @@ const Archives = () => {
 
                   {a.document && (
                     <a
-                      href={a.document.startsWith("http") ? a.document : `http://localhost:8000${a.document}`}
+                      href={a.document.startsWith("http") ? a.document : `https://react-node-placepilot-fullstack.onrender.com${a.document}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-400 hover:text-blue-500 font-semibold"

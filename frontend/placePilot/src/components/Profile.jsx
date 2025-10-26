@@ -24,7 +24,8 @@ const Profile = () => {
           <div className="d-flex justify-content-between align-items-start">
             <div className="d-flex align-items-center gap-3">
               <img
-                src="https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-600nw-2174926871.jpg"
+                src=
+                {user?.profilePhoto || "https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-600nw-2174926871.jpg"}
                 alt="profile"
                 className="rounded-circle"
                 style={{ width: "90px", height: "90px", objectFit: "cover" }}

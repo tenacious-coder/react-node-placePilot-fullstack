@@ -43,20 +43,20 @@ const PostAnnouncement = ({ onAnnouncementAdded }) => {
       <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="p-2 rounded bg-white text-black border-none"
+          className="p-2 rounded bg-white text-black outline-none border-none"
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <textarea
-          className="p-2 rounded bg-white text-black"
+          className="p-2 rounded bg-white text-black outline-none border-none"
           placeholder="Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
         <input
           type="file"
-          className="p-2 rounded bg-white text-black"
+          className="p-2 rounded bg-white text-black outline-none border-none"
           onChange={(e) => setDocument(e.target.files[0])}
         />
         <button type="submit" disabled={loading} className="bg-green-600 py-2 rounded mt-2">

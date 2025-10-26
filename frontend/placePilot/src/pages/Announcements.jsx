@@ -11,7 +11,7 @@ const Announcement = () => {
 
   const fetchAnnouncements = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/announcements/get", { withCredentials: true });
+      const res = await axios.get("https://react-node-placepilot-fullstack.onrender.com/api/announcements/get", { withCredentials: true });
       setAnnouncements(res.data.announcements || []);
     } catch (error) {
       console.error("Error fetching announcements:", error);
