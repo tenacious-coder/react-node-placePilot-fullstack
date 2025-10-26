@@ -5,19 +5,13 @@ import PlacementStats from "../components/PlacementStats";
 import DashboardCards from "../components/Dashboard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useNavigate } from 'react-router-dom'
+//import { useNavigate } from 'react-router-dom'
 import useGetAllJobs from "../hooks/useGetAllJobs"
-import { useSelector } from 'react-redux'
+//import { useSelector } from 'react-redux'
 
 function Home() {
   useGetAllJobs();
-  const { user } = useSelector(store => store.auth);
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (user?.role === 'recruiter') {
-      navigate("/admin/companies");
-    }
-  }, []);
+  
   return (
     <div>
       {/* Hero / Stats / Features */}
