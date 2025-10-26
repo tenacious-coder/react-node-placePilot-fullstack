@@ -27,7 +27,7 @@ const Archives = () => {
     if (!window.confirm("Are you sure you want to delete this archive?")) return;
 
     try {
-      const res = await axios.delete(`http://localhost:8000/api/archives/${id}`, { withCredentials: true });
+      const res = await axios.delete(`https://react-node-placepilot-fullstack.onrender.com/api/archives/${id}`, { withCredentials: true });
       toast.success(res.data.message);
       setArchives((prev) => prev.filter((a) => a._id !== id));
     } catch (error) {

@@ -12,7 +12,7 @@ const Training = () => {
   useEffect(() => {
     const fetchTrainings = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/training/get", { withCredentials: true });
+        const res = await axios.get("https://react-node-placepilot-fullstack.onrender.com/api/training/get", { withCredentials: true });
         setTrainings(res.data.trainings || []);
       } catch (error) {
         console.log(error);

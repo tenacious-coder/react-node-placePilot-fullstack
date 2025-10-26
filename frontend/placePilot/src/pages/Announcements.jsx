@@ -27,7 +27,7 @@ const Announcement = () => {
     if (!window.confirm("Are you sure you want to delete this announcement?")) return;
 
     try {
-      const res = await axios.delete(`http://localhost:8000/api/announcements/${id}`, { withCredentials: true });
+      const res = await axios.delete(`https://react-node-placepilot-fullstack.onrender.com/api/announcements/${id}`, { withCredentials: true });
       toast.success(res.data.message);
       setAnnouncements((prev) => prev.filter((a) => a._id !== id));
     } catch (error) {

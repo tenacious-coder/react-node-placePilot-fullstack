@@ -22,7 +22,7 @@ const PostArchive = ({ onArchiveAdded }) => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:8000/api/archives/create", formData, {
+      const res = await axios.post("https://react-node-placepilot-fullstack.onrender.com/api/archives/create", formData, {
         withCredentials: true,
         headers: { "Content-Type": "multipart/form-data" },
       });
