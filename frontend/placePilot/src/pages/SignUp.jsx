@@ -36,7 +36,7 @@ const SignUp = () => {
 
     try {
       const res = await axios.post(`${USER_API_END_POINT}/signUp`, formData, {
-        headers: { "Content-Type": "multipart/form-data" },
+       // headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });
 
