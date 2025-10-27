@@ -102,9 +102,9 @@ PlacePilot uses a *MongoDB database* to store structured information:
 
 3. *Add environment variables*
 
-   MONGODB_URL ="mongodb+srv://anjalikumari70996:FFAfRrKpsK42F4Ia@cluster0.inrxomg.mongodb.net/placePilot"   
+   MONGODB_URL ="your_mongodb_connection_string_here"   
 
-   JWT_SECRET= "WYDSJCBLYBC"
+   JWT_SECRET= "your_jwt_secret_here"
 
 4. *Run the backend*
    ```bash
