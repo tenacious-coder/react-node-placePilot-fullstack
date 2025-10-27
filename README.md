@@ -2,6 +2,8 @@
 
 ### A placement management platform connecting students and recruiters for smooth and automated campus placements.
 
+**Live Website:** [Click here to visit placePilot](https://react-node-placepilot-fullstack.onrender.com/) 
+
 ---
 
 ## 📚 Table of Contents
