@@ -12,7 +12,7 @@ const CompaniesTable = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   useEffect(() => {
-    const filteredCompany = companies.filter((company) => {
+    const filteredCompany = (companies || []).filter((company) => {
       if (!searchCompanyByText) return true;
       return company?.name
         ?.toLowerCase()
